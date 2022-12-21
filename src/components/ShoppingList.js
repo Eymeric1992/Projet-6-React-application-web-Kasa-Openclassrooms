@@ -1,7 +1,7 @@
 import  plantList  from '../datas/plantList'
 import PlantItem from './PlantItem'
 import '../styles/ShoppingList.css'
-
+import Tuile from './Tuile'
 function ShoppingList() {
 
 
@@ -9,12 +9,14 @@ function ShoppingList() {
 		<div className='images-locations'>
 	 
 			<ul className='lmj-plant-list'>
+                
      
-				{plantList.map(({ id, cover, title}) => (
-					<PlantItem key={id}
+				{plantList.map(({ id, cover, title, description}) => (
+					<PlantItem key={plantList.id} to={"/logement/"+plantList.id+"/#"}
 						id={id}
                            title={title}
 						cover={cover}
+                        description={description}
 					
 					/>
 				))}           
