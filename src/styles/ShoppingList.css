@@ -1,19 +1,21 @@
 .lmj-plant-list {
-	list-style-type: none;
-	top: 100px;
-	display: flex;
-	flex-wrap: wrap;
-	
-	gap: 60px;
-	background: #F7F7F7;
-border-radius: 25px;
 
-padding-top: 56px;
-padding-right: 50px;
-padding-left: 50px;
-justify-content: center;
-
+    background: #F7F7F7;
+    margin-left: 400px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 41px;
+    margin-top: 126px;
+    padding-top: 56px;
+    padding-bottom: 56px;
+    margin-left: 99px;
+    /* height: 1247px; */
+    width: 1240px;
+    left: 0px;
+    top: 0px;
+    border-radius: 25px;
 }
+
 
 .images-locations{
 display: flex;

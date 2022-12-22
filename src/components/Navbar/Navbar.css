@@ -1,0 +1,28 @@
+.Navbar {
+    color: #ff6060;
+    margin: auto 25px;
+    text-decoration: none;
+
+font-size: 24px;
+font-weight: 500;
+line-height: 34px;
+letter-spacing: 0em;
+text-align: right;
+
+}
+.Navbar:hover {
+    color: #000000;
+  }
+
+.Navbar-active {
+    color: #ff6060;
+    text-decoration: none;
+    border-bottom: 1px solid #ff6060;
+
+font-size: 24px;
+font-weight: 500;
+line-height: 34px;
+letter-spacing: 0em;
+text-align: right;
+
+}

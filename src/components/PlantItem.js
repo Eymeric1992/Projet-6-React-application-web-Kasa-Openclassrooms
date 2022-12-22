@@ -20,20 +20,11 @@ function PlantItem({ id, title, cover, name, water, light, description }) {
   
 	return (
 		<li className='lmj-plant-item' onClick={handleClick}> 
-                   <Link key={PlantItem.id} to={`/FicheLogement/${id}`}>
+                   <Link key={PlantItem.id} to={`/FicheLogement/${id}`} className="logementlien"> 
                    
     <img className='lmj-plant-item-cover' src={cover} alt={`${name} cover`} id={id} />
-    {title}
-
+    <div className='logement-title'> {title}</div></Link>
    
-    
-    <div>
-      
-
-        <CareScale careType='water' scaleValue={water} />
-        <CareScale careType='light' scaleValue={light} />
-    </div>
-    </Link>
 </li>
 	)
 }

@@ -6,7 +6,7 @@ function ShoppingList() {
 
 
 	return (
-		<div className='images-locations'>
+	 
 	 
 			<ul className='lmj-plant-list'>
                 
@@ -24,7 +24,7 @@ function ShoppingList() {
             
 			</ul>
             
-		</div>
+	 
 	)
 }
 
