@@ -1,0 +1,74 @@
+.erreurbig{
+    height: 263px;
+width: 100%;
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 700;
+font-size: 288px;
+line-height: 142.6%;
+/* or 411px */
+
+display: flex;
+align-items: center;
+text-align: center;
+justify-content: center;
+
+color: #FF6060;
+}
+
+.texte {
+    color: #FF6060;
+    font-family: Montserrat;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 51px;
+    letter-spacing: 0em;
+    text-align: left;
+    position: absolute;
+    /* left: 20.49%; */
+    /* right: 18.96%; */
+     top: 450px; 
+    /* bottom: 35.84%; */
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 142.6%;
+    display: flex;
+    color: #FF6060;
+    width: 100%;
+    justify-content: center;
+color: #FF6060;
+
+}
+
+.comeback{
+     /* width: 100%; */
+     text-decoration: none;
+     color: #FF6060;
+
+     position: absolute;
+     top: 563px;
+ 
+   
+     margin-left: 45%;
+     font-family: Montserrat;
+font-size: 18px;
+font-weight: 500;
+line-height: 26px;
+letter-spacing: 0em;
+text-align: left;
+display: flex;
+align-items: flex-end;
+text-decoration-line: underline;
+justify-content: center;
+
+
+}
+ 

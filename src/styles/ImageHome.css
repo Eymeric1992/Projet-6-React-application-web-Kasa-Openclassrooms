@@ -10,7 +10,10 @@
  
     border-radius: 25px;
 }
-
+.bright{
+  filter : none;
+  opacity: 0.9;
+}
 .image-text{
   margin-top: 122px;
   font-style: normal;
