@@ -1,11 +1,13 @@
 import React from "react";
 import Banner from "../../components/Banner";
 import plantList from "../../datas/plantList";
-import PlantItem from "../../components/PlantItem";
+ 
 import { useParams } from "react-router-dom";
 import Tag from "../../components/Tag"; 
  import "../../styles/FicheLogement.css"
 import Footer from "../../components/Footer";
+import Dropdown from "../../components/Dropdown";
+import Host from "../../assets/Host.png"
 
 
 
@@ -27,16 +29,19 @@ const tagsLogement = ficheLogement?.tags.map((tags, i) => {
     return <Tag key={i} nom={tags} />
 });
 const hostname = ficheLogement.host.name
-const hostpic = ficheLogement.host.picture
+//const hostpic = ficheLogement.host.picture
 const description = ficheLogement.description
 const equipements = ficheLogement.equipments
 const ratings = ficheLogement.rating
-
+/*
 const imgLogement = ficheLogement?.pictures.map((pictures, i) => {
  return <PlantItem key={i} nom={pictures}/>   
-})
+})*/
 
-const pictureLogement = ficheLogement.pictures
+const picLogement = () => {
+     return (
+        <img src={ficheLogement.pictures}  alt="tres jolie ca dit donc"></img>
+        )}
 
 
 
@@ -48,21 +53,25 @@ const pictureLogement = ficheLogement.pictures
             <img className="imagecenter" src="https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-20-1.jpg" alt="woaow woaow tres jolie"/>
             </div>
 
- 
-                <div className="titrelogement">{titleLogement}</div>
-                <div className="location">{location}</div>
-                <div className="tags">{tagsLogement}</div>
+                <div className="marginbox">
+                 <div className="titrelogement">{titleLogement}</div>
+                 <div className="location">{location}</div>
+                 <div className="tags">{tagsLogement}</div>
+                </div>
                 <div className="boxname">
-                    <div className="hostname">{hostname}</div>
+                    <div className="hostname">{hostname}
+                    <img src={Host} alt="voici votre hote" className="host"/>
+                    </div>
+                </div>
+            <div>{ratings}</div>
+            <div>{picLogement()}</div>
 
-                
+            <div className="info">
+            <Dropdown className="boxinfo" titre="Description" description={description}/>
+            <Dropdown className="boxinfo" titre="Equipements" description={equipements}/>
             </div>
-       
-            
+         
            
-            <div>{description}</div><br></br>
-            <div>{equipements}</div>
-            <div>{ratings}</div><br></br>
       
           
            

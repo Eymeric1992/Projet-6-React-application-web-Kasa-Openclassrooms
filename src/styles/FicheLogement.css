@@ -53,9 +53,31 @@
 .boxname {
      /* width: 100%; */
      position: relative;
-     margin-left: 1101px;
+     margin-left: 1201px;
      bottom: 137px;
     
 }
 
+.boxinfo{
+    margin-bottom: 20px;
+}
+
+.info {
+    display: flex;
+    justify-content: space-around;
+}
+
+.dropdown {
+    width: 35%;
+}
+
+.marginbox {
+    margin-left: 111px;
+}
+
+.host{
+    position: relative;
+    bottom: 60px;
+    left: 85px;
+}
  
