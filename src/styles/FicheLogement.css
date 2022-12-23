@@ -11,8 +11,10 @@
     display: block;
     margin-left: 102px;
     margin-right: auto;
-    /* width: 50%; */
+    width: 1240px;
     border-radius: 25px;
+    height: 415px;
+    margin-top: 50px;
 }
 
 .titrelogement {
@@ -53,6 +55,7 @@
      position: relative;
      margin-left: 1101px;
      bottom: 137px;
+    
 }
 
  
