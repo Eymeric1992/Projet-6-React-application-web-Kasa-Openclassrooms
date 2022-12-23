@@ -5,7 +5,7 @@ export default function Navbar(){
     return(
         <nav>
 <Link to="/" className="Navbar"> Accueil</Link>
-<Link to='/Apropos' className="Navbar-active">A propos</Link>
+<Link to='/Apropos' className="Navbar">A propos</Link>
         </nav>
     )
 }

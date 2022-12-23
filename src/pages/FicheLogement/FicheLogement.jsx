@@ -16,7 +16,7 @@ function FicheLogement() {
 
     const { id } = useParams();
 
-    const ficheLogement = plantList.find(logement => logement.id === id)
+    const ficheLogement = plantList.find(logement => logement.id === id) // rediriger vers 404
 
     console.log("voici id de fichelogement", ficheLogement)
     console.log("mon Id ", id)
@@ -29,19 +29,20 @@ const tagsLogement = ficheLogement?.tags.map((tags, i) => {
     return <Tag key={i} nom={tags} />
 });
 const hostname = ficheLogement.host.name
-//const hostpic = ficheLogement.host.picture
+const hostpic = ficheLogement.host.picture
 const description = ficheLogement.description
-const equipements = ficheLogement.equipments
+const equipements = ficheLogement.equipments.map((equip) => {
+    return <p>{equip}</p>
+})
 const ratings = ficheLogement.rating
+
+
 /*
 const imgLogement = ficheLogement?.pictures.map((pictures, i) => {
  return <PlantItem key={i} nom={pictures}/>   
 })*/
 
-const picLogement = () => {
-     return (
-        <img src={ficheLogement.pictures}  alt="tres jolie ca dit donc"></img>
-        )}
+ 
 
 
 
@@ -60,11 +61,28 @@ const picLogement = () => {
                 </div>
                 <div className="boxname">
                     <div className="hostname">{hostname}
-                    <img src={Host} alt="voici votre hote" className="host"/>
+                    <img src={hostpic} alt="voici votre hote" className="host"/>
                     </div>
                 </div>
-            <div>{ratings}</div>
-            <div>{picLogement()}</div>
+            <div>{function(){
+              const  stars =[]
+              const full= parseInt(ratings)
+              const empty = 5-full
+                    for ( let i=1; i <= full; i++ ){
+                         stars.push(<p>*</p>)                   }
+
+                         for ( let i=1; i <= empty; i++ ){
+                            stars.push(<p>/</p>)                   }
+
+
+                         return stars
+            }()
+
+        
+            }</div>
+             {ficheLogement.pictures.map((img) =>{
+                return <img src={img} alt='pic du logement'/>
+             })}
 
             <div className="info">
             <Dropdown className="boxinfo" titre="Description" description={description}/>

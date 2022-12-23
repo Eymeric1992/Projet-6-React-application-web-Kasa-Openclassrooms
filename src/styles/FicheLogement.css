@@ -65,11 +65,15 @@
 .info {
     display: flex;
     justify-content: space-around;
+    column-gap: 16px;
+    padding: 0px 16px;
+    max-width: 1080px;
+    margin: 0 auto;
+    flex-wrap: wrap;
 }
 
-.dropdown {
-    width: 35%;
-}
+ 
+
 
 .marginbox {
     margin-left: 111px;
@@ -79,5 +83,6 @@
     position: relative;
     bottom: 60px;
     left: 85px;
+    border-radius: 64px;
 }
  
