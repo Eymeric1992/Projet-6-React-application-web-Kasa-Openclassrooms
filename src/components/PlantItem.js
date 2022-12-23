@@ -1,7 +1,7 @@
-import CareScale from './CareScale'
+
 import '../styles/PlantItem.css'
 import { Link } from 'react-router-dom'
-import  plantList  from '../datas/plantList';
+
 //import { Routes, Route, useParams } from 'react-router-dom';
 
 

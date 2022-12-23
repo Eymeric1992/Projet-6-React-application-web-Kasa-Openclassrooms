@@ -4,10 +4,13 @@ import plantList from "../../datas/plantList";
 import PlantItem from "../../components/PlantItem";
 import { useParams } from "react-router-dom";
 import Tag from "../../components/Tag"; 
- 
+ import "../../styles/FicheLogement.css"
+import Footer from "../../components/Footer";
+
+
 
 function FicheLogement() {
-    const title = 'JE CROIS COMPRENDRE QUE TU CHERCHES UN LOGEMENT'
+
 
     const { id } = useParams();
 
@@ -15,6 +18,7 @@ function FicheLogement() {
 
     console.log("voici id de fichelogement", ficheLogement)
     console.log("mon Id ", id)
+
 
 
 const titleLogement = ficheLogement.title
@@ -37,29 +41,42 @@ const pictureLogement = ficheLogement.pictures
 
 
 
-  
+
     return (
-        <div>
-            <Banner />
-            <div>{titleLogement}</div>
-            <div>{location}</div>
-            <div>{tagsLogement}</div>
-            <div>{hostname}</div><br></br>
-            <div>{hostpic}</div><br></br>
+        <div className="bodycenter" >
+            <Banner /><div>
+            <img className="imagecenter" src="https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-20-1.jpg" alt="woaow woaow tres jolie"/>
+            </div>
+
+ 
+                <div className="titrelogement">{titleLogement}</div>
+                <div className="location">{location}</div>
+                <div className="tags">{tagsLogement}</div>
+                <div className="boxname">
+                    <div className="hostname">{hostname}</div>
+
+                
+            </div>
+       
+            
+           
             <div>{description}</div><br></br>
             <div>{equipements}</div>
-            <div>{ratings}</div>
+            <div>{ratings}</div><br></br>
       
           
-          
-          
-            <div> {pictureLogement}</div>
-            <div>{imgLogement}</div>
-
+           
+<Footer/>
             </div>
             );
 }
             export default FicheLogement;
+
+/* <div>{hostpic}</div><br></br>
+            <img src={ficheLogement.pictures} alt="oh bah c'est tres tres tres jolie"/>
+            <div> {pictureLogement}</div>
+            <div>{imgLogement}</div>*/
+
 /*
 function GetId() {
    

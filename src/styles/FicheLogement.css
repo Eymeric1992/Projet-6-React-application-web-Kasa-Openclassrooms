@@ -1,0 +1,58 @@
+.bodycenter {
+    width: 100%;
+
+
+    align-items: center;
+    justify-content: center;
+
+}
+
+.imagecenter {
+    display: block;
+    margin-left: 102px;
+    margin-right: auto;
+    /* width: 50%; */
+    border-radius: 25px;
+}
+
+.titrelogement {
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 51px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #FF6060;
+}
+
+.location {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #FF6060;
+}
+
+.tags {
+    margin-top: 25px;
+    margin-bottom: 60px;
+}
+
+.hostname {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: right;
+    width: 10px;
+    color: #FF6060;
+}
+
+.boxname {
+     /* width: 100%; */
+     position: relative;
+     margin-left: 1101px;
+     bottom: 137px;
+}
+
+ 

@@ -1,7 +1,7 @@
 import  plantList  from '../datas/plantList'
 import PlantItem from './PlantItem'
 import '../styles/ShoppingList.css'
-import Tuile from './Tuile'
+
 function ShoppingList() {
 
 
