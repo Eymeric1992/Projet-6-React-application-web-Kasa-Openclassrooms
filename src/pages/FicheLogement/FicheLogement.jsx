@@ -7,7 +7,7 @@ import Tag from "../../components/Tag";
  
 
 function FicheLogement() {
-    const title = 'JE CROIS COMPRENDRE QUE TU CHERCHES UN LOGEMENT, DUDE ...'
+    const title = 'JE CROIS COMPRENDRE QUE TU CHERCHES UN LOGEMENT'
 
     const { id } = useParams();
 
@@ -16,22 +16,43 @@ function FicheLogement() {
     console.log("voici id de fichelogement", ficheLogement)
     console.log("mon Id ", id)
 
-    const tagsLogement = ficheLogement?.tags.map((tags, i) => {
-        return <Tag key={i} nom={tags} />
-    });
+
+const titleLogement = ficheLogement.title
+const location = ficheLogement.location
+const tagsLogement = ficheLogement?.tags.map((tags, i) => {
+    return <Tag key={i} nom={tags} />
+});
+const hostname = ficheLogement.host.name
+const hostpic = ficheLogement.host.picture
+const description = ficheLogement.description
+const equipements = ficheLogement.equipments
+const ratings = ficheLogement.rating
+
 const imgLogement = ficheLogement?.pictures.map((pictures, i) => {
  return <PlantItem key={i} nom={pictures}/>   
 })
 
 const pictureLogement = ficheLogement.pictures
 
+
+
+
   
     return (
         <div>
             <Banner />
-            <h1>{title}</h1>
-           
+            <div>{titleLogement}</div>
+            <div>{location}</div>
             <div>{tagsLogement}</div>
+            <div>{hostname}</div><br></br>
+            <div>{hostpic}</div><br></br>
+            <div>{description}</div><br></br>
+            <div>{equipements}</div>
+            <div>{ratings}</div>
+      
+          
+          
+          
             <div> {pictureLogement}</div>
             <div>{imgLogement}</div>
 
