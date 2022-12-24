@@ -1,4 +1,4 @@
-import IMG from '../assets/mer.jpg'
+import IMG from '../assets/montagneaprop.png'
 import '../styles/ImageHome.css'
 
 function ImageApropos(){

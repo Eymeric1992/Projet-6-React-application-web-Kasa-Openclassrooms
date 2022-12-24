@@ -8,7 +8,9 @@ import Tag from "../../components/Tag";
 import Footer from "../../components/Footer";
 import Dropdown from "../../components/Dropdown";
 import Host from "../../assets/Host.png"
-
+import starfull from "../../assets/starfull.png"
+import starempty from "../../assets/starempty.png"
+import Carousel from "../../components/Carousel";
 
 
 function FicheLogement() {
@@ -50,9 +52,16 @@ const imgLogement = ficheLogement?.pictures.map((pictures, i) => {
 
     return (
         <div className="bodycenter" >
-            <Banner /><div>
-            <img className="imagecenter" src="https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-20-1.jpg" alt="woaow woaow tres jolie"/>
-            </div>
+            <Banner />         <div style={{ maxWidth: 1200, marginLeft: 'auto', marginRight: 'auto', marginTop: 64 }}>
+
+
+<Carousel>
+
+ {ficheLogement.pictures.map((img) =>{
+    return <img src={img} alt='pic du logement'/>
+ })}
+</Carousel>
+</div>
 
                 <div className="marginbox">
                  <div className="titrelogement">{titleLogement}</div>
@@ -67,22 +76,21 @@ const imgLogement = ficheLogement?.pictures.map((pictures, i) => {
             <div>{function(){
               const  stars =[]
               const full= parseInt(ratings)
-              const empty = 5-full
+              const stardisplay = 5-full
                     for ( let i=1; i <= full; i++ ){
-                         stars.push(<p>*</p>)                   }
+                         stars.push(<img src={starfull} alt="etoile pleines"/>)                   }
 
-                         for ( let i=1; i <= empty; i++ ){
-                            stars.push(<p>/</p>)                   }
+                         for ( let i=1; i <= stardisplay; i++ ){
+                            stars.push(<img src={starempty} alt="etoile pleines"/>)                   }
 
 
                          return stars
             }()
 
         
-            }</div>
-             {ficheLogement.pictures.map((img) =>{
-                return <img src={img} alt='pic du logement'/>
-             })}
+            }
+            </div>
+   
 
             <div className="info">
             <Dropdown className="boxinfo" titre="Description" description={description}/>
