@@ -8,6 +8,8 @@ import Survey from './pages/Home/Survey';
 import Apropos from './pages/Apropos/Apropos';
 import PageErreur from './pages/404/PageErreur';
 import FicheLogement from './pages/FicheLogement/FicheLogement';
+
+
 //import PlantItem from '../src/components/PlantItem';
 
 /* CE QUI MARCHAIT JUSQUA PRESENT*/

@@ -1,7 +1,8 @@
 import React from "react";
 import "../styles/Carousel.css"; //will be added later
 import { useState } from "react";
-
+import flecheDroite from "../assets/flechedroite.png";
+import flecheGauche from "../assets/flechegauche.png";
 
 const Carousel = (props) => {
   const { children } = props;
@@ -30,13 +31,20 @@ const Carousel = (props) => {
     return (
       <div className="carousel-container">
         <div className="carousel-wrapper">
-          <button onClick={prev} className="left-arrow">
-            &lt;
-          </button>
+        <img
+            src={flecheDroite}
+            onClick={prev}
+            alt="  fleche droite "
+            className="right-arrow"
+          />
+          <img
+            src={flecheGauche}
+            alt="  fleche droite "
+            onClick={next}
+            className="left-arrow"
+          />
+       
 
-          <button onClick={next} className="right-arrow">
-            &gt;
-          </button>
           <div className="carousel-content-wrapper">
             <div
               className="carousel-content"
