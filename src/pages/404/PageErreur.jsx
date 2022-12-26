@@ -2,7 +2,7 @@ import React from "react";
 import Banner from "../../components/Banner";
 import "../../styles/PageErreur.css"
 import { Link } from "react-router-dom";
-//import Footer from "../../components/Footer";
+ 
  
 
 function Erreur() {

@@ -31,7 +31,7 @@ function FicheLogement() {
   const hostpic = ficheLogement.host.picture;
   const description = ficheLogement.description;
   const equipements = ficheLogement.equipments.map((equip) => {
-    return <p>{equip}</p>;
+    return <p key={equip}>{equip}</p>;
   });
   // const ratings = ficheLogement.rating;
 
