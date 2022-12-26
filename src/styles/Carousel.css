@@ -61,5 +61,11 @@ border-radius: 25px;
 @media screen and (max-width: 1000px) {
     .carousel-content > * {
         width:100%
-  }}
+  }
+
+
+.left-arrow, .right-arrow {
+    width: 21px;
+    height: 32px;
+}}
   
