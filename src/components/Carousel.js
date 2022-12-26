@@ -8,6 +8,7 @@ const Carousel = (props) => {
   const { children } = props;
   let [currentIndex, setCurrentIndex] = useState(0);
   let length = children.length;
+  
 
   const prev = () => {
     if (currentIndex === 0) {
@@ -29,21 +30,25 @@ const Carousel = (props) => {
 
   if (length > 1) {
     return (
+   
       <div className="carousel-container">
+        <div>  <figcaption className="Count"> {currentIndex + 1}/{length}</figcaption></div>
+          
         <div className="carousel-wrapper">
-        <img
-            src={flecheDroite}
-            onClick={prev}
-            alt="  fleche droite "
-            className="right-arrow"
-          />
           <img
             src={flecheGauche}
-            alt="  fleche droite "
-            onClick={next}
+            onClick={prev}
+            alt="  fleche gauche "
             className="left-arrow"
           />
-       
+
+          <img
+            src={flecheDroite}
+            alt="  fleche droite "
+            onClick={next}
+            className="right-arrow"
+          />
+ 
 
           <div className="carousel-content-wrapper">
             <div
@@ -52,9 +57,13 @@ const Carousel = (props) => {
             >
               {children}
             </div>
+            
           </div>
         </div>
+      
+      
       </div>
+    
     );
   } else {
     return (

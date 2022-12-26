@@ -1,50 +1,88 @@
 .dropdown {
-    border-radius: 5px;
-    margin-bottom: 35px;
-    text-align: left;
-    flex: 1;
-    min-width: 320px;
-  }
+  border-radius: 5px;
+  margin-bottom: 35px;
+  text-align: left;
+  flex: 1;
   
-  .header-dropdown {
-    align-items: center;
-    background-color: #ff6060;
-    border-radius: 5px;
-    display: inline-flex;
-    height: 25%;
-    min-height: 50px;
-    width: 100%;
+}
+
+#dropdown-Fiabilité.dropdown {
+  border-radius: 5px;
+  margin-bottom: 15px;
+  text-align: left;
+  width: 95%;
+  flex: 1;
+}
+
+#dropdown-Respect.dropdown {
+  border-radius: 5px;
+  margin-bottom: 15px;
+  text-align: left;
+  width: 95%;
+  flex: 1;
+}
+
+#dropdown-Service.dropdown {
+  border-radius: 5px;
+  margin-bottom: 15px;
+  text-align: left;
+  width: 95%;
+  flex: 1;
+}
+
+#dropdown-Sécurité.dropdown{
+  border-radius: 5px;
+  margin-bottom: 15px;
+  text-align: left;
+  width: 95%;
+  flex: 1;
+}
+
+.header-dropdown {
+  align-items: center;
+  background-color: #ff6060;
+  border-radius: 5px;
+  display: inline-flex;
+  height: 25%;
+  min-height: 50px;
+  width: 100%;
+}
+
+.titre-dropdown {
+  color: #ffffff;
+  height: 50px;
+  line-height: 50px;
+  margin: 5px 10px;
+}
+
+.fleche-dropdown {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 10px;
+  width: 100%;
+}
+.fleche-dropdown:hover {
+  cursor: pointer;
+}
+
+.fleche-dropdown.true {
+  justify-content: start;
+  transform: rotate(-180deg);
+}
+
+.description-dropdown {
+  background-color: #f6f6f6;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  color: #ff6060;
+  height: 75%;
+  margin-top: -10px;
+  min-height: 100px;
+  padding: 25px 10px 10px 10px;
+}
+
+@media screen and (max-width: 700px) {
+  .dropdown {
+    min-width: 100%;
   }
-  
-  .titre-dropdown {
-    color: #ffffff;
-    height: 50px;
-    line-height: 50px;
-    margin: 5px 10px;
-  }
-  
-  .fleche-dropdown {
-    display: flex;
-    justify-content: flex-end;
-    margin-right: 10px;
-    width: 100%;
-  }
-  .fleche-dropdown:hover {
-      cursor: pointer;
-  }
-  
-  .fleche-dropdown.true {
-    justify-content: start;
-    transform: rotate(-180deg);
-  }
-  
-  .description-dropdown {
-    background-color: #f6f6f6;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-    color: #ff6060;
-    height: 75%;
-    margin-top: -10px;
-    min-height: 100px;
-    padding: 25px 10px 10px 10px;
-  }
+}

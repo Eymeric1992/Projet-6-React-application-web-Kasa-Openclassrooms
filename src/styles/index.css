@@ -1,8 +1,13 @@
- @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Montserrat&family=Shrikhand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Montserrat&family=Shrikhand&display=swap');
 body {
   margin: 0;
- 
+ display: table;
+ height: 100%;
+ width: 100%;
+ display: flex;
+ flex-direction: column;
   font-family: 'Montserrat', sans-serif;
+ 
 
 }
 
@@ -11,10 +16,9 @@ code {
     monospace;
 }
 
-html, body, #root {
+html, body{
   height: 100%;
-
-}
+ }
 
  
  
@@ -22,6 +26,6 @@ html, body, #root {
 #root {
  display: flex;
  flex-direction: column;
+ flex-grow: 1;
 }
-
 

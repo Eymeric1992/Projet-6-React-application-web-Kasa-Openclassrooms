@@ -76,7 +76,6 @@
 
 */
 
-
 .titrelogement {
   font-size: 36px;
   font-weight: 500;
@@ -143,17 +142,22 @@
   padding: 0px 16px;
   max-width: 1240px;
   margin: 0 auto;
-  flex-wrap: wrap;
+ 
   position: relative;
   bottom: 50px;
+ 
 }
 
 @media screen and (max-width: 1000px) {
   .boxname {
-    bottom: -17px;
-    gap: 40px;
+    bottom: -13px;
+    gap: 57px;
   }
 
+  .info {
+ 
+    margin-top: 50px;
+  }
   .star {
     display: flex;
     justify-content: flex-start;
@@ -162,76 +166,78 @@
     height: 15px;
     width: 15px;
     left: 1.5px;
-    top: -14.5px;
+    top: -24.5px;
     border-radius: 0px;
   }
 
-  .info {
-    bottom: -12px;
+  .titrelogement {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 142.6%;
   }
 
+  .location {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 142.6%;
+  }
 
-.titrelogement {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 142.6%;
+  .hostname {
+    font-size: 12px;
+  }
+
+  .host {
+    height: 32px;
+    width: 32px;
+    left: 103.5px;
+    top: 0.5px;
+    border-radius: 32px;
+  }
+
+  .titre-dropdown {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 142.6%;
+    height: 19px;
+    width: 77px;
+    left: 11.51202392578125px;
+    top: 5.4827880859375px;
+    border-radius: nullpx;
+  }
+
+  .header-dropdown {
+    height: 29.931270599365234px;
+    width: 100%;
+    left: 0px;
+    top: 0px;
+    border-radius: 5px;
+    margin: 0;
+  }
+  .fleche-dropdown {
+    height: 9px;
+    width: 100%;
+  }
+
+  .marginbox {
+    padding: 0px 16px;
+  }
+
+  .styleimage {
+    padding: 0 16px;
+  }
 }
 
-.location {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 142.6%;
-}
-
-.hostname {
-  font-size: 12px;
-}
-
-.host {
-  height: 32px;
-width: 32px;
-left: 103.5px;
-top: 0.5px;
-border-radius: 32px;
-
-}
-
-.titre-dropdown{
-  font-style: normal;
-  font-weight: 500;
-  font-size: 13px;
-  line-height: 142.6%;
-  height: 19px;
-width: 77px;
-left: 11.51202392578125px;
-top: 5.4827880859375px;
-border-radius: nullpx;
-
-}
-
-.header-dropdown {
-  height: 29.931270599365234px;
-width: 335px;
-left: 0px;
-top: 0px;
-border-radius: 5px;
-
-
-}
-.fleche-dropdown {
-  height: 9px;
-  width: 100%
-  
-
-}
-
-.marginbox{
-  padding: 0px 16px;
+.dropdwn-Description{
+  margin: 0;
 }
 
 
-.styleimage{
-  padding: 0 16px;
-}}
+@media screen and (max-width: 700px) {
+  .info{
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+}

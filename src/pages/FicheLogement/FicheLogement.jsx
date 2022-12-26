@@ -51,8 +51,10 @@ const imgLogement = ficheLogement?.pictures.map((pictures, i) => {
             marginLeft: "auto",
             marginRight: "auto",
             marginTop: 25,
+            position: "relative"
           }}
         >
+                     
           <Carousel>
             {ficheLogement.pictures.map((img) => {
               return <img src={img} key={img} alt="pic du logement" />;
