@@ -3,10 +3,14 @@
     display: flex;
     flex-direction: column;
     overflow: hidden;
+    height: 415px;
+
+border-radius: 25px;
+
 }
 
 .carousel-wrapper {
-   /* display: flex;*/
+   display: flex;
     width: 100%;
     position: relative;
 }
@@ -55,3 +59,9 @@
 .right-arrow {
     right: 24px;
 }
+
+@media screen and (max-width: 1000px) {
+    .carousel-content > * {
+        width:100%
+  }}
+  

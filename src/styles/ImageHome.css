@@ -1,13 +1,13 @@
 .ImgHome{
-    position: absolute;
-    width: 1277px;
-    height: 223px;
+ 
+    width: 1240px;
+    height: 240px;
     left: 100px;
     top: 171px;
     
     filter : brightness(50%);
     mix-blend-mode: darken;
- 
+ margin-top: 50px;
     border-radius: 25px;
 }
 .bright{
@@ -15,25 +15,53 @@
   opacity: 0.9;
 }
 .image-text{
-  margin-top: 122px;
+ 
+  color:#ffff;
+
+  position: absolute;
+  top: 40%;
+
+  width: 100%;
+  text-align: center;
   font-style: normal;
   font-weight: 500;
   font-size: 48px;
-  opacity: 0.8;
-  color: #ffff;
-  display: flex;
-  height: 134px;
-  width: 1240px;
-  left: 373px;
-  top: 249px;
-  border-radius: nullpx;
-  align-items: center;
-  justify-content: center;
-  margin-left: 100px;
+  line-height: 142.6%;
 
 }
 
 .fleximage{
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 0;
+  border: 0;
+  border-color: transparent;
+}
+
+@media screen and (max-width: 1000px) {
+.ImgHome  {
+  width: 95%;
+  height: 111px;
+  display: flex;
+  left: 0px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  margin-top: 20px;
+
+  
+}
+
+.image-text{
+  margin: 0;
+  font-size: 24px;
+  padding: 5px 21px;
+
+
+
+}
+
 }

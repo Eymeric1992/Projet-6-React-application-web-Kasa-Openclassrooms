@@ -1,3 +1,5 @@
+/*
+
 .bodycenter {
     width: 100%;
 
@@ -17,60 +19,27 @@
     margin-top: 50px;
 }
 
-.titrelogement {
-    font-size: 36px;
-    font-weight: 500;
-    line-height: 51px;
-    letter-spacing: 0em;
-    text-align: left;
-    color: #FF6060;
-}
 
-.location {
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 26px;
-    letter-spacing: 0em;
-    text-align: left;
-    color: #FF6060;
-}
 
 .tags {
     margin-top: 25px;
-    margin-bottom: 60px;
+  
 }
 
-.hostname {
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 26px;
-    letter-spacing: 0em;
-    text-align: right;
-    width: 10px;
-    color: #FF6060;
-}
 
 .boxname {
-     /* width: 100%; */
+      width: 100%; 
      position: relative;
-     margin-left: 1201px;
-     bottom: 137px;
-    
+     margin-left: 1215px;
+     bottom: 116px;
+ 
 }
 
 .boxinfo{
     margin-bottom: 20px;
 }
 
-.info {
-    display: flex;
-    justify-content: space-around;
-    column-gap: 16px;
-    padding: 0px 16px;
-    max-width: 1080px;
-    margin: 0 auto;
-    flex-wrap: wrap;
-}
+
 
  
 
@@ -79,10 +48,189 @@
     margin-left: 111px;
 }
 
-.host{
-    position: relative;
-    bottom: 60px;
-    left: 85px;
-    border-radius: 64px;
-}
+
  
+
+.star {
+    position: absolute;
+    top: 678px;
+    right: 160px;
+}
+
+.marginbox{
+    margin-left: 154px;
+}
+
+.star {
+    fill: #151212;
+
+  
+}
+
+
+.totheleft {
+    margin-left: -55px;
+
+}
+
+
+*/
+
+
+.titrelogement {
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 51px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #ff6060;
+  margin-top: 25px;
+}
+
+.location {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #ff6060;
+  margin-bottom: 25px;
+}
+
+.hostname {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: right;
+  width: 10px;
+  color: #ff6060;
+}
+
+.host {
+  height: 64px;
+  width: 64px;
+  border-radius: 64px;
+}
+
+.marginbox {
+  max-width: 1240px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.boxname {
+  display: flex;
+  gap: 75px;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+  bottom: 125px;
+}
+
+.star {
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  bottom: 98px;
+}
+
+.info {
+  display: flex;
+  justify-content: space-around;
+  column-gap: 16px;
+  padding: 0px 16px;
+  max-width: 1240px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  position: relative;
+  bottom: 50px;
+}
+
+@media screen and (max-width: 1000px) {
+  .boxname {
+    bottom: -17px;
+    gap: 25px;
+  }
+
+  .star {
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+    bottom: 40px;
+    height: 15px;
+    width: 15px;
+    left: 1.5px;
+    top: -14.5px;
+    border-radius: 0px;
+  }
+
+  .info {
+    bottom: -12px;
+  }
+
+
+.titrelogement {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 142.6%;
+}
+
+.location {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 142.6%;
+}
+
+.hostname {
+  font-size: 12px;
+}
+
+.host {
+  height: 32px;
+width: 32px;
+left: 103.5px;
+top: 0.5px;
+border-radius: 32px;
+
+}
+
+.titre-dropdown{
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 142.6%;
+  height: 19px;
+width: 77px;
+left: 11.51202392578125px;
+top: 5.4827880859375px;
+border-radius: nullpx;
+
+}
+
+.header-dropdown {
+  height: 29.931270599365234px;
+width: 335px;
+left: 0px;
+top: 0px;
+border-radius: 5px;
+
+
+}
+.fleche-dropdown {
+  height: 9px;
+  width: 100%
+  
+
+}
+
+.marginbox{
+  padding: 0px 16px;
+}
+
+
+.styleimage{
+  padding: 0 16px;
+}}

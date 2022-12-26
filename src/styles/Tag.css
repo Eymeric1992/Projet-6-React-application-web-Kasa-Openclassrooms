@@ -12,3 +12,18 @@
 .tag:first-of-type {
     margin-left: 0;
 }
+
+/* media tag display inline */
+
+@media screen and (max-width: 1000px) {
+
+    .tag{
+       
+        font-size: 10px;
+        margin: auto 2px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+
+    }
+}

@@ -1,53 +1,69 @@
-import React from 'react'
-import '../styles/Carousel.css' //will be added later
-import { useState, useEffect } from 'react'
+import React from "react";
+import "../styles/Carousel.css"; //will be added later
+import { useState } from "react";
 
 
 const Carousel = (props) => {
-    const { children } = props
-    const [currentIndex, setCurrentIndex] = useState(0)
+  const { children } = props;
+  let [currentIndex, setCurrentIndex] = useState(0);
+  let length = children.length;
 
-    const [length, setLength] = useState(children.length)
-
-    // Set the length to match current children from props
-    useEffect(() => {
-        setLength(children.length)
-    }, [children])
-
-    const next = () => {
-        if (currentIndex < (length - 1)) {
-            setCurrentIndex(prevState => prevState + 1)
-        }
+  const prev = () => {
+    if (currentIndex === 0) {
+      setCurrentIndex(length - 1);
+    } else {
+      setCurrentIndex(currentIndex - 1);
     }
+    return setCurrentIndex;
+  };
 
-    const prev = () => {
-        if (currentIndex > 0) {
-            setCurrentIndex(prevState => prevState - 1)
-        }
+  const next = () => {
+    if (currentIndex === length - 1) {
+      setCurrentIndex((length = 0));
+    } else {
+      setCurrentIndex(currentIndex + 1);
     }
+    return setCurrentIndex;
+  };
 
+  if (length > 1) {
     return (
-        <div className="carousel-container">
-            <div className="carousel-wrapper">
-                <button onClick={prev} className="left-arrow">
-                    &lt;
-                </button>
+      <div className="carousel-container">
+        <div className="carousel-wrapper">
+          <button onClick={prev} className="left-arrow">
+            &lt;
+          </button>
 
-                <div className="carousel-content-wrapper">
-                    { /*...*/}
-                </div>
-                {/* You can alwas change the content of the button to other things */}
-                <button onClick={next} className="right-arrow">
-                    &gt;
-                </button>
-                <div className="carousel-content-wrapper">
-                    <div className="carousel-content" style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
-                        {children}
-                    </div>
-                </div>
+          <button onClick={next} className="right-arrow">
+            &gt;
+          </button>
+          <div className="carousel-content-wrapper">
+            <div
+              className="carousel-content"
+              style={{ transform: `translateX(-${currentIndex * 100}%)` }}
+            >
+              {children}
             </div>
+          </div>
         </div>
-    )
-}
+      </div>
+    );
+  } else {
+    return (
+      <div className="carousel-container">
+        <div className="carousel-wrapper">
+          <div className="carousel-content-wrapper">
+            <div
+              className="carousel-content"
+              style={{ transform: `translateX(-${currentIndex * 100}%)` }}
+            >
+              {children}
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  }
+};
 
-export default Carousel
+export default Carousel;

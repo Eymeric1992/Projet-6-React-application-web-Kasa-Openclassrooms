@@ -1,34 +1,25 @@
-import  plantList  from '../datas/plantList'
-import PlantItem from './PlantItem'
-import '../styles/ShoppingList.css'
+import plantList from "../datas/plantList";
+import PlantItem from "./PlantItem";
+import "../styles/ShoppingList.css";
 
 function ShoppingList() {
-
-
-	return (
-	 
-	 
-			<ul className='lmj-plant-list'>
-                
-     
-				{plantList.map(({ id, cover, title, description}) => (
-					<PlantItem key={plantList.id} to={"/logement/"+plantList.id+"/#"}
-						id={id}
-                           title={title}
-						cover={cover}
-                        description={description}
-					
-					/>
-				))}           
-
-            
-			</ul>
-            
-	 
-	)
+  return (
+    <ul className="lmj-plant-list">
+      {plantList.map(({ id, cover, title, description }) => (
+        <PlantItem
+          to={"/logement/" + plantList.id + "/#"}
+          id={id}
+          title={title}
+          cover={cover}
+          description={description}
+          key={id}
+        />
+      ))}
+    </ul>
+  );
 }
 
-export default ShoppingList
+export default ShoppingList;
 
 /*const cardItems = [
     'monstera',
