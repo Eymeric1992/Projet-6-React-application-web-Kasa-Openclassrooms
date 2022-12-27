@@ -1,13 +1,6 @@
 /*
 
-.bodycenter {
-    width: 100%;
 
-
-    align-items: center;
-    justify-content: center;
-
-}
 
 .imagecenter {
     display: block;
@@ -146,6 +139,17 @@
   position: relative;
   bottom: 50px;
  
+}
+
+.bodycenter {
+  padding: 0;
+  margin: 0;
+  height: 100%!important;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+
 }
 
 @media screen and (max-width: 1000px) {

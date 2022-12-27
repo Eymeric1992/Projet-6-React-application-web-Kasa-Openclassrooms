@@ -17,7 +17,10 @@ function FicheLogement() {
 
   const ficheLogement = plantList.find((logement) => logement.id === id);
 
-  // rediriger vers 404
+ if (ficheLogement === undefined) {
+  window.location.href='/*'
+
+ } 
 
   console.log("voici id de fichelogement", ficheLogement);
   console.log("mon Id ", id);
