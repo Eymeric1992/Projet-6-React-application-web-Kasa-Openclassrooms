@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import "../styles/Dropdown.css";
-import fleche from "../assets/Vector.png";
+import "./Dropdown.css";
+import fleche from "../../assets/Vector.png";
 
 function Dropdown({ titre, description }) {
   /* Crée un Hook d'état */

@@ -1,6 +1,6 @@
 .Navbar {
   color: #ff6060;
-  margin: auto 25px;
+ 
   text-decoration: none;
 
   font-size: 24px;
@@ -27,7 +27,14 @@
 .Navbar:hover {
   text-decoration: underline;
 }
-@media screen and (max-width: 1000px) {
+
+
+.navlink{
+  display: flex;
+    gap: 30px;
+}
+
+@media screen and (max-width: 1260px) {
   .Navbar {
     height: 17px;
     width: 78px;

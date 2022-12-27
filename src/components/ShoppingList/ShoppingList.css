@@ -1,22 +1,11 @@
-.lmj-plant-list {
- /* background: #f7f7f7;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 41px;
-  margin-top: 126px;
-  padding-top: 56px;
-  padding-bottom: 56px;
-  left: 0px;
-  top: 0px;
-  border-radius: 25px;
-  margin: 9%;*/
+.logement-list {
   background: #f7f7f7;
   display: flex;
   flex-wrap: wrap;
   grid-template-columns: repeat(3, 1fr);
   gap: 41px;
   max-width: 1300px;
-  width: 1242px;
+  width: 1240px;
   margin: 47px auto 0;
   left: 0px;
   top: 0px;
@@ -28,11 +17,7 @@
   justify-content: center;
   margin-bottom: 75px;
 }
-/*
-.lmj-plant-item{
-    padding-top: 56px;
-    padding-bottom: 56px;
-}*/
+
 
 .images-locations {
   display: flex;
@@ -40,13 +25,13 @@
   padding: 90px;
 }
 
-@media screen and (max-width: 1000px) {
-  .lmj-plant-list {
+@media screen and (max-width: 1260px) {
+  .logement-list {
     margin: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: auto;
+    width: 95%;
     padding-inline-start: 0px;
     background-color: transparent;
   }

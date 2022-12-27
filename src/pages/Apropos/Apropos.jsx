@@ -1,14 +1,14 @@
 import React from "react";
-import Banner from "../../components/Banner";
+import Banner from "../../components/Banner/Banner";
 //import Footer from "../../components/Footer";
-import ImageApropos from "../../components/ImageApropos";
-import Dropdown from "../../components/Dropdown";
-import Footer from "../../components/Footer";
-import "../../styles/Aproposflex.css";
+import ImageApropos from "../../components/ImageApropos/ImageApropos";
+import Dropdown from "../../components/Dropdown/Dropdown";
+import Footer from "../../components/Footer/Footer";
+import "./Aproposflex.css";
 function APropos() {
   return (
     <div className="bodycenter">
-      <div>
+      <div className="Home">
         <Banner />
         <ImageApropos />
         <div className="aproposflex">

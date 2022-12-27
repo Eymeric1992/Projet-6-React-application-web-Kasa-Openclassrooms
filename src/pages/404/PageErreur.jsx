@@ -1,6 +1,6 @@
 import React from "react";
-import Banner from "../../components/Banner";
-import "../../styles/PageErreur.css"
+import Banner from "../../components/Banner/Banner";
+import "./PageErreur.css"
 import { Link } from "react-router-dom";
  
  

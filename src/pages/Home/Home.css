@@ -1,0 +1,16 @@
+.Home{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1240px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media screen and (max-width: 1260px) {
+    .Home {
+        width: 100%;
+    }
+}
+

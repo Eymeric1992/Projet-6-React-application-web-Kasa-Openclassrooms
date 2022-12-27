@@ -1,5 +1,5 @@
-import IMG from "../assets/IMG.png";
-import "../styles/ImageHome.css";
+import IMG from "../../assets/IMG.png";
+import "./ImageHome.css";
 
 function ImageHome() {
   const text = "Chez vous, partout et ailleurs";

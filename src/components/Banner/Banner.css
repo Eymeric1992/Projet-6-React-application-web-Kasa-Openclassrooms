@@ -1,0 +1,35 @@
+.banner {
+    /* color: black; */
+    /* text-align: right; */
+    display: flex;
+    width: 1240px;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+ 
+
+.logo {
+	height: 600;
+ 
+	
+}
+
+@media screen and (max-width: 1260px) {
+	.banner {
+		padding: 0;
+        margin-top: 20px;
+    
+        width: 95%;
+	}
+
+    .logo{
+      
+        height: 47px;
+    }
+
+  
+
+   
+}

@@ -97,6 +97,9 @@
   text-align: right;
   width: 10px;
   color: #ff6060;
+  display: flex;
+align-items: flex-end;
+text-align: right;
 }
 
 .host {
@@ -132,34 +135,39 @@
   display: flex;
   justify-content: space-around;
   column-gap: 16px;
-  padding: 0px 16px;
+
   max-width: 1240px;
   margin: 0 auto;
- 
+
   position: relative;
   bottom: 50px;
- 
 }
 
 .bodycenter {
   padding: 0;
   margin: 0;
-  height: 100%!important;
+  height: 100% !important;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-
-
 }
 
-@media screen and (max-width: 1000px) {
+.totheleft {
+  width: 100%;
+}
+
+.titre-dropdown {
+  font-size: 18px;
+}
+
+@media screen and (max-width: 1260px) {
   .boxname {
     bottom: -13px;
-    gap: 57px;
+    gap: 76px;
   }
 
   .info {
- 
+    width: 95%;
     margin-top: 50px;
   }
   .star {
@@ -167,16 +175,16 @@
     justify-content: flex-start;
     position: relative;
     bottom: 40px;
-    height: 15px;
-    width: 15px;
+    height: 20px;
+    width: 25px;
     left: 1.5px;
-    top: -24.5px;
+    top: -34.5px;
     border-radius: 0px;
   }
 
   .titrelogement {
     font-style: normal;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 18px;
     line-height: 142.6%;
   }
@@ -186,18 +194,6 @@
     font-weight: 500;
     font-size: 14px;
     line-height: 142.6%;
-  }
-
-  .hostname {
-    font-size: 12px;
-  }
-
-  .host {
-    height: 32px;
-    width: 32px;
-    left: 103.5px;
-    top: 0.5px;
-    border-radius: 32px;
   }
 
   .titre-dropdown {
@@ -227,21 +223,47 @@
 
   .marginbox {
     padding: 0px 16px;
+    width: 95%;
   }
 
   .styleimage {
-    padding: 0 16px;
+    width: 95%;
   }
 }
 
-.dropdwn-Description{
+.dropdwn-Description {
   margin: 0;
 }
 
-
 @media screen and (max-width: 700px) {
-  .info{
-    gap: 30px;
+  .info {
+    gap: 7px;
     flex-wrap: wrap;
+  }
+  .hostname {
+    font-size: 12px;
+    line-height: normal;
+  }
+
+  .host {
+    height: 32px;
+    width: 32px;
+    left: 103.5px;
+    top: 0.5px;
+    border-radius: 32px;
+  }
+  .star {
+    height: 15px;
+    margin-top: 19px;
+    margin-bottom: 64px;
+    top: -24.5px;
+  }
+
+  .boxname {
+    bottom: -19px;
+    gap: 55px;
+  }
+  .description-dropdown {
+    font-size: 12px;
   }
 }

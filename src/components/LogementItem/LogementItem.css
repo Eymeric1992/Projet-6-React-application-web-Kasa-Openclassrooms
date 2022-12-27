@@ -1,9 +1,10 @@
-.lmj-plant-item-cover {
+.logement-item-cover {
 	height: 340px;
 	width: 340px;
 	left: 0px;
 	top: 0px;
 	border-radius: 10px;
+	object-fit: cover;
 	
 	
 }
@@ -23,11 +24,16 @@ display: contents;
 
 }
 
-.lmj-plant-item {
+.logement-item {
 
 	width: 340px;
 	border-radius: 10px;
 	height: 340px;
 	list-style-type: none;
 
+}
+
+@media screen and (max-width: 1260px) {
+	.logement-item{width: 100%;}
+	.logement-item-cover{width: 100%;}
 }

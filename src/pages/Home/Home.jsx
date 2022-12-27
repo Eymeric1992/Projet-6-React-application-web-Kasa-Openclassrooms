@@ -1,27 +1,20 @@
-import Banner from '../../components/Banner'
-import Footer from '../../components/Footer'
+import Banner from "../../components/Banner/Banner";
+import Footer from "../../components/Footer/Footer";
+import ShoppingList from "../../components/ShoppingList/ShoppingList";
+import ImageHome from "../../components/ImageHome/ImageHome";
+import "./Home.css";
 
-import ShoppingList from '../../components/ShoppingList'
-import ImageHome from '../../components/ImageHome'
-//import Survey from './Survey'
-//import { Routes, Route } from "react-router-dom"
-import '../../styles/App.css'
 function App() {
   return (
-    <div className='App'>
-      <Banner />
-      <ImageHome />
-      <ShoppingList />
+    <div>
+      <div className="Home">
+        <Banner />
+        <ImageHome />
+        <ShoppingList />
+      </div>
       <Footer />
     </div>
-   
-  )
+  );
 }
- 
-export default App
 
-/* EXEMPLE ROUTING
-<Routes>
-<Route path="/" element={<Index />} />
-<Route path="/" element={<Survey />} />
-</Routes>*/
+export default App;

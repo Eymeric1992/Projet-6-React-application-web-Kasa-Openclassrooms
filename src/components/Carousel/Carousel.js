@@ -1,8 +1,8 @@
 import React from "react";
-import "../styles/Carousel.css"; //will be added later
+import "./Carousel.css"; //will be added later
 import { useState } from "react";
-import flecheDroite from "../assets/flechedroite.png";
-import flecheGauche from "../assets/flechegauche.png";
+import flecheDroite from "../../assets/flechedroite.png";
+import flecheGauche from "../../assets/flechegauche.png";
 
 const Carousel = (props) => {
   const { children } = props;

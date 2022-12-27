@@ -55,6 +55,7 @@
   flex-shrink: 0;
   flex-grow: 1;
   height: 415px;
+  object-fit: cover;
 }
 
 .left-arrow,
@@ -75,7 +76,7 @@
   right: 24px;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1260px) {
   .carousel-content > * {
     width: 100%;
   }
