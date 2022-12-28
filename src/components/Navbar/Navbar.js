@@ -1,11 +1,24 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import "../Navbar/Navbar.css"
-export default function Navbar(){
-    return(
-        <nav className="navlink">
-<Link to="/" className="Navbar"> Accueil</Link>
-<Link to='/Apropos' className="Navbar">A propos</Link>
-        </nav>
-    )
-}
+import { NavLink } from "react-router-dom";
+import "../Navbar/Navbar.css";
+
+const Navbar = () => {
+  const navLinkStyles = ({ isActive }) => {
+    return {
+      textDecoration: isActive ? "underline" : "none",
+    };
+  };
+  return (
+    <nav>
+      <NavLink style={navLinkStyles} to="/" className="Navbar">
+        Accueil
+      </NavLink>
+      <NavLink style={navLinkStyles} to="/Apropos" className="Navbar">
+        A propos
+      </NavLink>
+    </nav>
+  );
+};
+
+
+export default Navbar

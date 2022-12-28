@@ -34,5 +34,7 @@
     width: 95%;
     padding-inline-start: 0px;
     background-color: transparent;
+    padding: 9px 0px 54px 0px;
+    gap: 25px;
   }
 }

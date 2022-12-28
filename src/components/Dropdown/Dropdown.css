@@ -8,7 +8,7 @@
 
 #dropdown-Fiabilité.dropdown {
   border-radius: 5px;
-  margin-bottom: 15px;
+  margin-bottom:35px;
   text-align: left;
   
   flex: 1;
@@ -16,7 +16,7 @@
 
 #dropdown-Respect.dropdown {
   border-radius: 5px;
-  margin-bottom: 15px;
+  margin-bottom:35px;
   text-align: left;
   
   flex: 1;
@@ -24,7 +24,7 @@
 
 #dropdown-Service.dropdown {
   border-radius: 5px;
-  margin-bottom: 15px;
+  margin-bottom:35px;
   text-align: left;
   
   flex: 1;
@@ -32,7 +32,7 @@
 
 #dropdown-Sécurité.dropdown{
   border-radius: 5px;
-  margin-bottom: 15px;
+  margin-bottom:35px;
   text-align: left;
   
   flex: 1;
@@ -43,7 +43,6 @@
   background-color: #ff6060;
   border-radius: 5px;
   display: inline-flex;
-  height: 25%;
   min-height: 50px;
   width: 100%;
 }
@@ -75,8 +74,9 @@
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   color: #ff6060;
-  height: 75%;
+  height: 85%;
   margin-top: -10px;
+  font-size: 24px;
   min-height: 100px;
   padding: 25px 10px 10px 10px;
 }

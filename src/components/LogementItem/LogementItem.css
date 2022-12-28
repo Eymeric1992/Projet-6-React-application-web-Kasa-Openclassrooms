@@ -5,8 +5,11 @@
 	top: 0px;
 	border-radius: 10px;
 	object-fit: cover;
-	
-	
+	filter:brightness(0.8);
+}
+
+.linear{
+	background: linear-gradient(45deg, red, blue);
 }
 
 .logementlien {
