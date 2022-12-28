@@ -95,13 +95,15 @@
   line-height: 26px;
   letter-spacing: 0em;
   text-align: right;
-  width: 10px;
+  width: 100px;
   color: #ff6060;
   display: flex;
 align-items: flex-end;
 text-align: right;
 position: relative;
     top: -4px;
+    right: -88px;
+    overflow-wrap: anywhere;
 }
 
 .host {
@@ -250,6 +252,8 @@ position: relative;
     line-height: normal;
     position: relative;
     top: -3px;
+    right: -49px;
+    width: 74px;
   }
 
   .host {

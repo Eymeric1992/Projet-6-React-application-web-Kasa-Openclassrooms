@@ -11,15 +11,15 @@
 
 
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 700px) {
   .Navbar {
     height: 17px;
-    width: 78px;
+    width: 100px;
     left: 195px;
     top: 18px;
     border-radius: nullpx;
 
-    font-size: 12px;
+    font-size: smaller;
     text-transform: uppercase;
     margin: 0;
   }
